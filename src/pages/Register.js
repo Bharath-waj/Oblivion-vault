@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; 
 import '../styles/register.css';
 
 function Register() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -14,7 +17,15 @@ function Register() {
 
   const handleSubmit = e => {
     e.preventDefault();
+
+    if (!formData.username || !formData.email || !formData.password) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
     console.log("Register Data:", formData);
+
+    navigate("/login");
   };
 
   return React.createElement(
