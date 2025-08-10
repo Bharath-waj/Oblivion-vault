@@ -1,18 +1,40 @@
+body {
+  background: #000000; /* solid black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+html,
+body,
+#root {
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
 
 .login-card {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(0, 255, 255, 0.2);
   border-radius: 20px;
   padding: 3rem;
   text-align: center;
   width: 400px;
+  color: #00ffff;
   box-shadow: 
     0 20px 40px rgba(0, 0, 0, 0.5),
     0 0 0 1px rgba(255, 255, 255, 0.05),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 15px rgba(0, 255, 255, 0.2);
   position: relative;
   overflow: hidden;
+  animation: glowPulse 25s ease-in-out infinite;
 }
 
 .login-card::before {
@@ -24,11 +46,33 @@
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
   animation: shimmer 3s infinite;
+  z-index: 0;
 }
 
 @keyframes shimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.5),
+      0 0 0 1px rgba(255, 255, 255, 0.05),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+      0 0 15px rgba(0, 255, 255, 0.15);
+  }
+  50% {
+    box-shadow: 
+      0 20px 60px rgba(0, 255, 255, 0.7),
+      0 0 0 1px rgba(255, 255, 255, 0.1),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+      0 0 40px rgba(0, 255, 255, 0.8);
+  }
 }
 
 .login-card h2 {
@@ -38,6 +82,8 @@
   text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
   font-weight: 300;
   letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
 }
 
 .login-card p {
@@ -45,6 +91,8 @@
   margin-bottom: 2rem;
   font-size: 1rem;
   font-weight: 300;
+  position: relative;
+  z-index: 1;
 }
 
 .login-card input {
@@ -59,6 +107,8 @@
   color: white;
   transition: all 0.3s ease;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .login-card input:focus {
@@ -85,6 +135,7 @@
   letter-spacing: 1px;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .login-card button::before {
@@ -96,6 +147,7 @@
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   transition: left 0.5s;
+  z-index: 0;
 }
 
 .login-card button:hover::before {
@@ -115,6 +167,8 @@
   font-size: 0.9rem;
   transition: all 0.3s ease;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  position: relative;
+  z-index: 1;
 }
 
 .register-link:hover {
@@ -133,30 +187,4 @@
   .login-card h2 {
     font-size: 2rem;
   }
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: linear-gradient(-45deg, #030032, #000005, #00fffb, #00f7ff);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
-  font-family: Arial;
-  font-weight:bolder;
-}
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
