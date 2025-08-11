@@ -1,0 +1,91 @@
+.register-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #0a0a0a, #1a1a1a);
+}
+
+
+.register-card {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 3rem;
+  width: 480px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.9);
+  }
+}
+
+.register-card h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, cyan, #00ffea, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.register-card input:focus {
+  border-color: cyan;
+  outline: none;
+  box-shadow: 0 0 10px cyan;
+}
+
+.register-card button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #c300ff, #100056, cyan);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  animation: background 0.3s ease, transform 0.3s ease;
+}
+
+
+.register-card button:hover {
+  background: linear-gradient(45deg, #5a3be7, cyan);
+  transform: scale(1.03);
+}
+
+.register-card p {
+  margin-top: 1rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.register-card p a {
+  color: cyan;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.register-card p a:hover {
+  color: white;
+}
