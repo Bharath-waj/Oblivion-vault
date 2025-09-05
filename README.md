@@ -39,40 +39,39 @@ It ensures **end-to-end encryption** with a simple, intuitive UI — giving user
 ---
 
 ## 📐 Architecture / Flow
-**Oblivion-Vault/**
+Oblivion-Vault/
 │
-├── **backend/**
-│   └── supabase/
-│       └── setup.md
+├── backend/
+│ └── supabase/
+│ └── setup.md # Backend setup instructions
 │
-├── **frontend/**
-│   ├── node_modules/        # Dependencies installed via npm/yarn
-│   ├── public/              # Publicly accessible assets
-│   │   ├── favicon.ico
-│   │   ├── index.html
-│   │   ├── logo192.png
-│   │   ├── logo512.png
-│   │   ├── manifest.json
-│   │   └── robots.txt
-│   │
-│   ├── src/                 # Main source code
-│   │   ├── components/      # Reusable UI components
-│   │   ├── contexts/        # React context providers (state management)
-│   │   ├── hooks/           # Custom React hooks
-│   │   ├── pages/           # Application pages/screens
-│   │   ├── services/        # API calls, backend interactions
-│   │   ├── styles/          # CSS/Styling files
-│   │   ├── App.js           # Root React component
-│   │   ├── index.css        # Global styles
-│   │   ├── index.js         # Entry point for React app
-│   │   └── logo.svg
-│   │
-│   ├── .env                 # Environment variables
-│   ├── package-lock.json    # Dependency lock file
-│   └── package.json         # Project metadata & dependencies
+├── frontend/
+│ ├── node_modules/ # Dependencies installed via npm/yarn
+│ ├── public/ # Publicly accessible assets
+│ │ ├── favicon.ico
+│ │ ├── index.html
+│ │ ├── logo192.png
+│ │ ├── logo512.png
+│ │ ├── manifest.json
+│ │ └── robots.txt
+│ │
+│ ├── src/ # Main source code
+│ │ ├── components/ # Reusable UI components
+│ │ ├── contexts/ # React context providers (state management)
+│ │ ├── hooks/ # Custom React hooks
+│ │ ├── pages/ # Application pages/screens
+│ │ ├── services/ # API calls, backend interactions
+│ │ ├── styles/ # CSS/Styling files
+│ │ ├── App.js # Root React component
+│ │ ├── index.css # Global styles
+│ │ ├── index.js # Entry point for React app
+│ │ └── logo.svg
+│ │
+│ ├── .env # Environment variables
+│ ├── package-lock.json # Dependency lock file
+│ └── package.json # Project metadata & dependencies
 │
-└── **README.md**                # Project documentation  
-
+└── README.md # Project documentation
 ---
 
 ## ✅ Testing & Verification
