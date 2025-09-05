@@ -32,7 +32,6 @@ It ensures **end-to-end encryption** with a simple, intuitive UI — giving user
 ## 🔐 Key Features  
 - **User-Friendly Vault Operations** → Add, view, manage, delete securely.  
 - **Adaptive Key Management** → Password-derived keys, never hardcoded or stored.  
-- **Decoy Vault** → provides an additional layer of security, displaying harmless fake files when you're under duress or facing unauthorised access attempts.
 - **Fail-Safe Recovery** → Backup and restore with encrypted sync options.
 - **True Client-Side Security** → All encryption/decryption happens locally in the browser/app. The server never sees plaintext or keys.
 
@@ -88,7 +87,8 @@ Oblivion-Vault/
 ## 🚀 Future Enhancements
 - 🔑 Multi-factor Authentication (MFA).  
 - ☁️ Cloud backup with **zero-knowledge encryption**.  
-- 📂 File versioning & recovery.  
+- 📂 File versioning & recovery.
+- **Decoy Vault** → provides an additional layer of security, displaying harmless fake files when you're under duress or facing unauthorised access attempts.
 - 📱 Biometric unlocking (fingerprint/face recognition) for mobile devices.  
 
 ---
@@ -111,4 +111,4 @@ npm install
 # Start the frontend
 npm start
 
-**Lock it. Encrypt it. Forget it, only you hold the key.**
+**Lock it. Encrypt it. Forget it, No Worries.**
