@@ -111,5 +111,4 @@ npm install
 # Start the frontend
 npm start
 
-
-**"Lock it. Encrypt it. Forget it — only you hold the key."**
+**Lock it. Encrypt it. Forget it, only you hold the key.**
