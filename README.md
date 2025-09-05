@@ -23,6 +23,7 @@ It ensures **end-to-end encryption** with a simple, intuitive UI — giving user
 ## 🛠️ Tech Stack
 **Frontend:** React js ,CSS
 **Encryption:** Advanced Encryption Standard **(AES)** in Galois/Counter Mode **(GCM)** client-side cryptography
+
 **Backend:** Secure APIs (Supabase/Node.js)
 **Authentication:** Secure login & session management
 
