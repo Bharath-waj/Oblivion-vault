@@ -39,13 +39,14 @@ It ensures **end-to-end encryption** with a simple, intuitive UI — giving user
 ---
 
 ## 📐 Architecture / Flow
+
 Oblivion-Vault/
 │
-├── backend/
+├── backend/ # Backend code & APIs
 │ └── supabase/
 │ └── setup.md # Backend setup instructions
 │
-├── frontend/
+├── frontend/ # Frontend React app
 │ ├── node_modules/ # Dependencies installed via npm/yarn
 │ ├── public/ # Publicly accessible assets
 │ │ ├── favicon.ico
@@ -72,6 +73,7 @@ Oblivion-Vault/
 │ └── package.json # Project metadata & dependencies
 │
 └── README.md # Project documentation
+
 ---
 
 ## ✅ Testing & Verification
